@@ -7,39 +7,46 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="static/js/main.js" charset="utf-8"> </script>
 
     <title></title>
   </head>
   <body>
-<form action="/login" method="post">
 <div class="login-box">
   <div class="btn-group btn-group-toggle" data-toggle="buttons">
     <label class="btn btn-secondary active">
-      <input type="radio" name="options" id="option1" autocomplete="off" checked> Login
+      <input type="radio" name="options" id="option1" autocomplete="off" onclick="ShowLogin()"checked> Login
     </label>
     <label class="btn btn-secondary">
-      <input type="radio" name="options" id="option2" autocomplete="off"> Sign Up
+      <input type="radio" name="options" id="option2" autocomplete="off" onclick="ShowSignup()"> Sign Up
     </label>
   </div>
   <div class="login-input">
 
     <i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i>
-    <input type="text" name="" value="" placeholder="Username   ">
+    <input type="text" name="" value="" placeholder="Username   " required>
   </div>
   <div class="login-pass">
 
     <i class="fa fa-lock fa-lg" aria-hidden="true"></i>
-    <input type="password" name="" value=""placeholder="Password  " >
+    <input type="password" name="" value="" placeholder="Password  " required>
+  </div>
+  <div class="email-input">
+
+    <i class="fa fa-envelope " aria-hidden="true"></i>
+    <input type="text" name="" value="" placeholder="Email   " required>
   </div>
   <div class="login-btn">
 
-    <button type="button" class="btn btn-outline-success" name="button">Submit</button>
+    <button type="button" class="btn btn-outline-success" name="button" onclick="">Submit</button>
+
+  </div>
+  <div class="register-btn">
+
+    <button type="button" class="btn btn-outline-success" name="button">Register</button>
 
   </div>
 
 </div>
-</form>
-
-
   </body>
 </html>

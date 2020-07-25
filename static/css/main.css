@@ -73,7 +73,27 @@ border-bottom-style: dotted; */
   color: orange ;
   outline: none;
 }
+.email-input label{
+  color: orange;
+  font-size: 20px;
+  font-family: monospace;
+  margin-right: 5%;
+  margin-left: -10%;
 
+}
+.email-input {
+  margin-top: 7%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: none;
+}
+.email-input input{
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  color: orange ;
+  outline: none;
+}
 .login-btn {
   margin-top: 7%;
   padding-top: 10px;
@@ -84,7 +104,17 @@ border-bottom-style: dotted; */
     background-color:yellow;
 } */
 .login-btn button:hover{background-color:orange;}
+.register-btn {
+  margin-top: 7%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: none;
 
+}
+/* .login-btn button {
+    background-color:yellow;
+} */
+.register-btn button:hover{background-color:orange;}
 .btn {
   padding-left: 1.75rem;
   padding-right: 1.75em;
@@ -93,6 +123,9 @@ border-bottom-style: dotted; */
   margin-right: 20px;
 }
 .fa-user-circle-o {
+  margin-right: 20px;
+}
+.fa-envelope{
   margin-right: 20px;
 }
 .btn-group {
